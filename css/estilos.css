@@ -101,7 +101,6 @@ BANER PRINCIPAL DE LA PAGINA
   height: 545px;
   background: url("../images/fondo-banner-superior.jpg") no-repeat center top;
   background-size: 100%;
-  /*border: 10px solid black;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,7 +156,6 @@ POLITICAS
   color: #fff;
   background: url("../images/fondo-nuestras-politicas.jpg") no-repeat center top;
   background-size: 100%;
-  /*border: 10px solid black;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +172,6 @@ PIE CIUDAD
   height: 964px;
   background: url("../images/fondo-ciudad-mapa.jpg") no-repeat center top;
   background-size: 100%;
-  /*border: 10px solid black;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,10 +266,15 @@ EMPIEZAN LAS MEDIAS QUERIES
   }
 
   .imagen-banner-diamante {
-    position: absolute;
-    z-index: 2;
-    bottom: 0px;
-    right: -95px; }
+    width: 85%;
+    max-height: 550px;
+    max-width: 500px;
+    right: 20px; 
+  }
+
+  .imagen-banner-escudo {
+    bottom: 150px;
+    left: 10%; }
 
     .encabezado .logo img {
       width: 200px;
