@@ -264,11 +264,22 @@ EMPIEZAN LAS MEDIAS QUERIES
     height: auto;
   }
 
+  .politicas img {
+    width: 80%;
+  }
+
   .imagen-banner-diamante {
     position: absolute;
     z-index: 2;
     bottom: 0px;
     right: -95px; }
-    
-  
+
+    .encabezado .logo img {
+      width: 200px;
+      height: auto; }
+
+      .frase {
+        height: auto;
+       }
+
   }
