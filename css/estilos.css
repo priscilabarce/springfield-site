@@ -184,10 +184,13 @@ PIE CIUDAD
 FOOTER
 --------------------------------------------*/
 .footer {
-  height: 150px;
+  height: auto;
   background-color: #ee161f;
   color: #fff;
   padding: 25px 0; }
+
+  .footer a {
+    color: #fff; }
 
 
 /*---------------------------------------------
