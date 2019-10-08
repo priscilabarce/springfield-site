@@ -54,7 +54,8 @@ body {
 .contenedor-bloque-buscar {
   display: flex;
   height: 3rem;
-  margin: 1rem 0; }
+  margin: 1rem 0; 
+}
 
 .contenedor-bloque-buscar input[type="text"] {
   border: 0;
@@ -160,7 +161,9 @@ POLITICAS
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative; 
+  margin-bottom: -32px;
+}
 
 /*---------------------------------------------
 PIE CIUDAD
@@ -185,6 +188,21 @@ FOOTER
   background-color: #ee161f;
   color: #fff;
   padding: 25px 0; }
+
+
+/*---------------------------------------------
+PAGINAS DE NOTICIAS
+--------------------------------------------*/
+.singlepage p {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.singlepage h1 {
+  padding: 20px 0;
+}
+
+
 
 /*---------------------------------------------
 EMPIEZAN LAS MEDIAS QUERIES
@@ -225,11 +243,29 @@ EMPIEZAN LAS MEDIAS QUERIES
     width: 20rem;
     right: 3rem;
     top: 2.8rem;
-    transition: all 0.5s ease; } }
+    transition: all 0.5s ease; 
+    z-index: 100;
+  } 
+
+
+
+}
+
+
 @media all and (max-width: 800px) {
   .politicas {
     padding: 25px 0;
     background-color: #0172be;
     background-image: none;
     color: #fff;
-    height: auto; } }
+    height: auto;
+  }
+
+  .imagen-banner-diamante {
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    right: -95px; }
+    
+  
+  }
