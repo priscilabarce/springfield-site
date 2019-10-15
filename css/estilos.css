@@ -54,7 +54,8 @@ body {
 .contenedor-bloque-buscar {
   display: flex;
   height: 3rem;
-  margin: 1rem 0; }
+  margin: 1rem 0; 
+}
 
 .contenedor-bloque-buscar input[type="text"] {
   border: 0;
@@ -100,7 +101,6 @@ BANER PRINCIPAL DE LA PAGINA
   height: 545px;
   background: url("../images/fondo-banner-superior.jpg") no-repeat center top;
   background-size: 100%;
-  /*border: 10px solid black;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,11 +156,12 @@ POLITICAS
   color: #fff;
   background: url("../images/fondo-nuestras-politicas.jpg") no-repeat center top;
   background-size: 100%;
-  /*border: 10px solid black;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative; 
+  margin-bottom: -32px;
+}
 
 /*---------------------------------------------
 PIE CIUDAD
@@ -171,7 +172,6 @@ PIE CIUDAD
   height: 964px;
   background: url("../images/fondo-ciudad-mapa.jpg") no-repeat center top;
   background-size: 100%;
-  /*border: 10px solid black;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,10 +181,28 @@ PIE CIUDAD
 FOOTER
 --------------------------------------------*/
 .footer {
-  height: 150px;
+  height: auto;
   background-color: #ee161f;
   color: #fff;
   padding: 25px 0; }
+
+  .footer a {
+    color: #fff; }
+
+
+/*---------------------------------------------
+PAGINAS DE NOTICIAS
+--------------------------------------------*/
+.singlepage p {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.singlepage h1 {
+  padding: 20px 0;
+}
+
+
 
 /*---------------------------------------------
 EMPIEZAN LAS MEDIAS QUERIES
@@ -225,11 +243,45 @@ EMPIEZAN LAS MEDIAS QUERIES
     width: 20rem;
     right: 3rem;
     top: 2.8rem;
-    transition: all 0.5s ease; } }
+    transition: all 0.5s ease; 
+    z-index: 100;
+  } 
+
+
+
+}
+
+
 @media all and (max-width: 800px) {
   .politicas {
     padding: 25px 0;
     background-color: #0172be;
     background-image: none;
     color: #fff;
-    height: auto; } }
+    height: auto;
+  }
+
+  .politicas img {
+    width: 80%;
+  }
+
+  .imagen-banner-diamante {
+    width: 85%;
+    max-height: 550px;
+    max-width: 500px;
+    right: 20px; 
+  }
+
+  .imagen-banner-escudo {
+    bottom: 150px;
+    left: 10%; }
+
+    .encabezado .logo img {
+      width: 200px;
+      height: auto; }
+
+      .frase {
+        height: auto;
+       }
+
+  }
